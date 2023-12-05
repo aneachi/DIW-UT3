@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.div {
+    flex-grow: 1;
+    min-height: 200px;
+    margin: 0.02px;
+}
+
+#rojo {
+    background-color: red;
+    flex-basis: 100%;
+}
+#verde {background-color: green;}
+#amarillo {background-color: yellow;}
+#azul {background-color: blue;}
+#naranja {
+    background-color: orange;
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    #azul {flex-basis: 100%;}
+}
+
+@media screen and (max-width: 575px) {
+    #verde {flex-basis: 100%;}
+}

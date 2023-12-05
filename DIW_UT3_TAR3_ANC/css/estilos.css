@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 100%;
+}
+
+#rojo {
+    background-color: red;
+    min-height: 100%;
+}
+
+#morado {
+    background-color: purple;
+    min-height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    body {grid-template-columns: 10px 100%;}
+}

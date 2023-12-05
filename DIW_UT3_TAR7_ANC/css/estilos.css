@@ -1,0 +1,33 @@
+.contenedor {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.imagen {
+    max-width: 80%;
+    height: auto;
+}
+.imagen>img {width: 100%;}
+
+.texto {
+    display: flex;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.texto>div {
+    flex: 1;
+    padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .imagen>img {content: url("../img/medium-art.jpg");}
+}
+
+@media screen and (max-width: 575px) {
+    .imagen>img {content: url("../img/small-art.jpg");}
+}
