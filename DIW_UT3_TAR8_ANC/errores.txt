@@ -1,2 +1,0 @@
--Arreglar la redimensión de tamaño de la segunda tabla
--Arreglar apariencia de la tabla3 redimensionada en columnas
