@@ -1,0 +1,13 @@
+#padre {
+    height: 40vw;
+    border: 3px solid black;
+}
+#hijo {
+    height: 50%;
+    margin: 2px;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
