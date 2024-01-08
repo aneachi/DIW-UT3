@@ -1,0 +1,24 @@
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition-duration: 3s;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 0 auto;
+    transition-duration: 3s;
+}
+
+h1:hover {
+    background-color: white;
+    color: red;
+}
+
+div:hover {
+    background-color: yellow;
+    border-radius: 100%;
+}

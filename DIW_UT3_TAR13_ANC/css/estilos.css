@@ -1,0 +1,56 @@
+* {margin: 0;}
+@keyframes eventoCuadrado {
+    0% {left: 0px; top: 0px;}
+    50% {left: 95%; top: 24em;}
+    75% {left: 50%; top: 40em;}
+    100% {left: 0px; top: 0px;}
+}
+
+#cuadrado {
+    width: 3em;
+    height: 3em;
+    background-color: red;
+    position: relative;
+    animation-name: eventoCuadrado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes eventoCirculo {
+    
+    0% {
+        background-color: red;
+        width: 4em;
+        height: 4em;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    65% {
+        background-color: pink;
+    }
+    100% {
+        background-color: red;
+        transform: scale(14em);
+    }
+}
+
+#circulo {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: green;
+
+}
+
+#circulo:hover {
+    animation-name: eventoCirculo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

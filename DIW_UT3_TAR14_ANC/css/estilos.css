@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#mountain {
+    background-color: aquamarine;
+    width: fit-content;
+    height: 300px;
+}
+
+@keyframes luna {
+    
+}
+/*
+ROTAR SOL
+@keyframes rotateRays {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+*/
+@keyframes sol {
+    from {
+        transform: translate(-100px, 250px);
+    }
+    to {
+        transform: translate(-100px, 250px);
+    }
+}
+
+#moon, #rays {
+    position: absolute;
+    margin-top: 30px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#rays {
+    left: 500px;
+    top: 80px;
+    animation-name: sol;
+}
