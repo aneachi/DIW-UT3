@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    color: rgb(238, 238, 101);
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 300px;
+    animation-duration: 4s;
+    animation-name: ocultarse;
+    animation-fill-mode: forwards;
+  }
+  
+  #texto {
+    width: 40%;
+    left: 30%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: justify;
+    position: fixed;
+    top: 100%;
+    animation-name: deslizar;
+    animation-duration: 25s;
+    animation-iteration-count: 1;
+    transform: perspective(300px) rotateX(15deg);
+  }
+  
+  @keyframes ocultarse {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes deslizar {
+    to {
+      top: -200%;
+    }
+  }
